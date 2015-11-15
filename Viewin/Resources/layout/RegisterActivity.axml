@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/StyleLayout">
+    <TextView
+        android:text="Estas a dos pasos  de otener tus descargas GRATIS"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        style="@style/TxtAzulColor" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:gravity="center"
+        android:background="@android:color/darker_gray">
+        <TextView
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            style="@style/TxtAzulColor"
+            android:textStyle="bold" />
+        <ImageView
+            android:src="@drawable/flecha"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/imageView1" />
+        <TextView
+            android:text="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textColor="#F3F3F3" />
+        <ImageView
+            android:src="@drawable/flecha"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/imageView2" />
+        <TextView
+            android:text="3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:textColor="#F3F3F3" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtLastName"
+                android:hint="Apellidos"
+                android:textColor="#000"
+                android:background="@drawable/Redoun"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtName"
+                android:hint="Nombres"
+                android:textColor="#000"
+                android:background="@drawable/Redoun"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtEmail"
+                android:hint="Correo Electronico"
+                android:textColor="#000"
+                android:background="@drawable/Redoun"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:inputType="numberSigned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtEdad"
+                android:numeric="integer"
+                android:maxLength="2"
+                android:hint="Edad"
+                android:textColor="#000"
+                android:background="@drawable/Redoun"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtPassword"
+                android:hint="Contraseña de 6 digitos"
+                android:textColor="#000"
+                android:maxLength="6"
+                android:password="true"
+                android:background="@drawable/Redoun"
+                android:layout_marginBottom="5dp" />
+            <Button
+                android:text="CONTINUAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BntContinuar"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/BntVerde" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

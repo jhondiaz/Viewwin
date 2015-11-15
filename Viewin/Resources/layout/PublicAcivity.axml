@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/StyleLayout">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="0000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtPuntosRR"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#144D67"
+            android:textStyle="bold" />
+        <ImageView
+            android:src="@drawable/img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ImgView1"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:src="@drawable/img2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ImgView2"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:src="@drawable/img3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ImgView3"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:src="@drawable/img4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ImgView4"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:src="@drawable/img5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ImgView5"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="0000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtPuntosR"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProGWebview"
+        android:indeterminateOnly="true"
+        android:indeterminate="true" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Webview"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PrgBViews"
+        android:indeterminate="false"
+        android:progress="0" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LnYNext"
+        android:background="#144D67">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:gravity="center">
+            <TextView
+                android:text="Presiona las imagenes en el mismo orden que estan el la parte superio  para CONTINUAR + PUNTOS"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LnYNext2"
+            android:gravity="center">
+            <ImageButton
+                android:src="@drawable/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton1"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tag="0" />
+            <ImageButton
+                android:src="@drawable/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tag="1" />
+            <ImageButton
+                android:src="@drawable/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton3"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tag="2" />
+            <ImageButton
+                android:src="@drawable/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton4"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tag="3" />
+            <ImageButton
+                android:src="@drawable/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton5"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tag="4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
